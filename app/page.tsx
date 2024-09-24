@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "../components/Hero";
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import Grid from "@/components/Grid";
