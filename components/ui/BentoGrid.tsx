@@ -72,9 +72,11 @@ export const BentoGridItem = ({
         <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
           {spareImg && <img src={spareImg} alt={spareImg} className={"object-cover object-center w-full h-full"} />}
         </div>
-        {id === 6 && <BackgroundGradientAnimation>
-          <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
-        </BackgroundGradientAnimation>}
+        {id === 6 && 
+        <BackgroundGradientAnimation>
+          {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
+        </BackgroundGradientAnimation>
+        }
 
         <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5 lg:p-10')}>
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm sm:text-xs lg:text-base z-10">
@@ -126,7 +128,7 @@ export const BentoGridItem = ({
                   }
                 }} />
               </div>
-              <MagicButton handleClick={handleCopy} title={copied ? "Copied" : "Copy my email"} icon={<IoCopyOutline />} position="left" className={`bg-[#161a31]`}/>
+              <MagicButton onClick={handleCopy} title={copied ? "Copied" : "Copy my email"} icon={<IoCopyOutline />} position="left" className={`bg-[#161a31]`}/>
             </div>
           )}
 
