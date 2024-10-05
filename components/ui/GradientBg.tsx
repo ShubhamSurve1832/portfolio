@@ -96,7 +96,7 @@ export const BackgroundGradientAnimation = ({
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
-            <feGaussianBlur
+            <feGaussianBlur 
               in="SourceGraphic"
               stdDeviation="10"
               result="blur"
