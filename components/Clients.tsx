@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <div className='py-20' id='projects'>
       <h2 className='heading'>
-        Kinjd Words from <span className='text-purple'> Satisfied Clients</span>
+        Kind Words from <span className='text-purple'> Satisfied Clients</span>
       </h2>
       <div className='flex flex-col items-center max-lg:mt-10'>
        
@@ -17,4 +17,4 @@ const Clients = () => {
   )
 }
 
-export default Clients
+export default Clients;
