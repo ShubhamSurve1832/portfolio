@@ -4,6 +4,7 @@ import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data";
 import Clients from "@/components/Clients";
+import Experiance from "@/components/Experiance";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Clients />
+        <Experiance />
       </div>
     </main>
   );
