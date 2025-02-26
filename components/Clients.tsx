@@ -8,10 +8,8 @@ const Clients = () => {
       <h2 className='heading'>
         Kind Words from <span className='text-purple'> Satisfied Clients</span>
       </h2>
-      <div className='flex flex-col items-center max-lg:mt-10'>
-       
+      <div className='flex flex-col items-center max-lg:mt-10'>       
         <InfiniteMovingCards items={testimonials} className='w-full' speed='slow' />
-        
       </div>
     </div>
   )
