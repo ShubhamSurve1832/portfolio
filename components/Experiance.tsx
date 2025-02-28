@@ -1,6 +1,7 @@
 import { workExperience } from '@/data'
 import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/MovingBorders'
 
 const Experiance = () => {
     return (
@@ -11,11 +12,15 @@ const Experiance = () => {
             <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
                 {
                     workExperience.map(({ id, title, desc, thumbnail }) => (
-                        <div key={id} className='flex flex-col gap-4'>
-                            <Image width={10} height={10} src={thumbnail} alt={title} className='md:w-10 w-5' />
-                            <h3 className='text-xl font-semibold'>{title}</h3>  
-                            <p className='text-sm'>{desc}</p>
+                        <Button>
+                            
+
+                        <div key={id}>
+                            <Image width={10} height={10} src={thumbnail} alt={title} className='lg:w-32 md:w-20 w-16' />
+                            {/* <h3 className='text-xl font-semibold'>{title}</h3>  
+                            <p className='text-sm'>{desc}</p> */}
                         </div>
+                        </Button>
                     ))
                 }
 
