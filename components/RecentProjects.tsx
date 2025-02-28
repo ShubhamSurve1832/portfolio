@@ -2,6 +2,7 @@ import React from 'react'
 import { projects } from '@/data';
 import { PinContainer } from './ui/3d-pin';
 import { FaLocationArrow } from 'react-icons/fa';
+import Image from 'next/image';
 
 const RecentProjects = () => {
     return (
@@ -17,9 +18,9 @@ const RecentProjects = () => {
                             <PinContainer title={link} href={link}>
                                 <div className=' relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                                     <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                        <img src='bg.png' alt={title} className='w-full h-full object-cover object-center' />
+                                        <Image width={10} height={10} src='/bg.png' alt={title} className='w-full h-full object-cover object-center' />
                                     </div>
-                                    <img src={img} alt={title} className='z-10 absolute bottom-0' />
+                                    <Image width={10} height={10} src={img} alt={title} className='z-10 absolute bottom-0' />
                                 </div>
                                 <h2 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'> {title}</h2>
                                 <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>{des}</p>
@@ -28,8 +29,8 @@ const RecentProjects = () => {
                                         {
                                             iconLists.map((icon, index) => {
                                                 return (
-                                                    <div className='flex items-center justify-center border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8' style={{transform:`translateX(-${5 * index * 2}px)`}}>
-                                                        <img key={index} src={icon} alt={title} className='p-2' />
+                                                    <div key={index} className='flex items-center justify-center border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8' style={{transform:`translateX(-${5 * index * 2}px)`}}>
+                                                        <Image width={10} height={10} key={index} src={icon} alt={title} className='p-2' />
                                                     </div>
                                                 )
                                             })

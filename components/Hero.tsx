@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenrateEffecr'
@@ -28,7 +29,7 @@ const Hero = () => {
             <TextGenerateEffect words="Dynamic Web Magic with next js"  className='text-4xl md:text-5xl lg:text-6xl text-center'/>
             <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl'>hello , I&apos;m Shubham , A frontend developer</p>
 
-            <MagicButton title='Get Started' icon='🚀' position='right' handleClick={() => {}}/>
+            <MagicButton title='Get Started' icon='🚀' position='right' onClick={() => {}}/>
 
           </div>
         </div>

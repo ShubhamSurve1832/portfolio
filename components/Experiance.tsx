@@ -1,4 +1,5 @@
 import { workExperience } from '@/data'
+import Image from 'next/image'
 import React from 'react'
 
 const Experiance = () => {
@@ -11,7 +12,7 @@ const Experiance = () => {
                 {
                     workExperience.map(({ id, title, desc, thumbnail }) => (
                         <div key={id} className='flex flex-col gap-4'>
-                            <img src={thumbnail} alt={title} className='md:w-10 w-5' />
+                            <Image width={10} height={10} src={thumbnail} alt={title} className='md:w-10 w-5' />
                             <h3 className='text-xl font-semibold'>{title}</h3>  
                             <p className='text-sm'>{desc}</p>
                         </div>
