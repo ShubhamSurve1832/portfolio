@@ -12,11 +12,11 @@ const Experiance = () => {
             <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
                 {
                     workExperience.map(({ id, title, desc, thumbnail }) => (
-                        <Button>
+                        <Button key={id} borderRadius='1.7rem' duration={Math.floor(Math.random()*10000)+ 10000} className='flex-1 text-white border-neutral-200 dark:border-slate-800'>
                             
 
-                        <div key={id}>
-                            <Image width={10} height={10} src={thumbnail} alt={title} className='lg:w-32 md:w-20 w-16' />
+                        <div>
+                            <Image width={100} height={100} src={thumbnail} alt={title} className='lg:w-32 md:w-20 w-16' />
                             {/* <h3 className='text-xl font-semibold'>{title}</h3>  
                             <p className='text-sm'>{desc}</p> */}
                         </div>
